@@ -52,7 +52,7 @@ class App extends Component {
           }}
         />
         { this.state.row.map(item => (
-          <MovieItem movie={item}/>
+          <MovieItem movie={item} key={item.id}/>
         ))}
       </div>
     );
